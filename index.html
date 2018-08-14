@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创客贴模仿</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css3动画库/animate.min.css">
+</head>
+<body>
+<div id="nav">   
+    <p class="idea">创客贴</p> 
+    <ul class="myMenu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">贴近你的创意</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">创造丰富的作品</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">简单的拖拉拽</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">免费与尽情</a></li>
+        <li data-menuanchor="fifthPage"><a href="#fifthPage">输出分享</a></li>
+        <li data-menuanchor="sixthPage"><a href="#sixthPage">加入我们</a></li>
+    </ul>
+</div>
+
+<div id="dowebok">
+    <div class="section section1">
+        <div class="hk">
+            <h1>贴近你的创意</h1>
+            <p>从未想象的简单与有趣，给你全新的线上设计体验，随时随地开启设计，呈现你的创意和想法</p>
+            <div class="dlzc">
+                <a>登 &ensp; &ensp;录</a>
+                <a>注 &ensp; &ensp;册</a>
+            </div>
+        </div>
+    </div>
+    <div class="section section2">
+        <div class="zk">
+            <h1>创造丰富的作品</h1>
+            <p>不让复杂的设计软件拘束你的创意，用最简单有趣的方式制作海报、ppt、信息图、贺卡、名片等所有你想要的一切。</p>
+            <div class="dt"><img src="images/22.png" width="100%" height="100%"></div>
+            <div class="tb"></div>
+        </div>
+    </div>
+    <div class="section section3">
+        <div class="zk">
+            <h2>简单的拖拉拽</h2>
+            <h3>搜索你需要的素材，通过拖拉拽即可完成素材的挑选与使用，这一切不需要下载任何插件或文件，让你更专注于自己的创意。</h3>
+            <div class="middle"><img src="images/4(1).png" width="100%" height="100%"></div>
+            <div class="left"><img src="images/3(1).png" width="100%" height="100%"></div>
+            <div class="right"><img src="images/2(1).png" width="100%" height="100%"></div>
+            <div class="bottom"><img src="images/1(2).png" width="100%" height="100%"></div>
+        </div>
+    </div>
+    <div class="section section4">
+        <div class="zk">
+            <div class="bjb"><img src="images/6(1).png" width="118" height="150"></div>
+            <div class="dn"><img src="images/8.png" width="285" height="236"></div>
+            <div class="dn_scree"><img src="images/9.png" width="224" height="83"></div>
+            <div class="right_top"><img src="images/10.png" width="375" height="375"></div>
+            <div class="left_bottom"><img src="images/1(3).png" width="128" height="180"></div>
+            <div class="coffee"><img src="images/2(2).png" width="96" height="93"></div>
+            <div class="glasses"><img src="images/5(1).png" width="114" height="43"></div>
+            <h2>免费与尽情</h2>
+            <h3>创客贴为你提供大量免费的无背景图片、高质量的摄影图片、网络字体、背景、模板等素材，方便你自由创意。上传自己的素材到云端，无论何时何地都能使用，再也不用担心找不到素材。</h3>
+        </div>
+    </div>
+    <div class="section section5">
+        <div class="bottom"></div>
+        <h3>PRINT & SHARE<br>输出分享</h3>
+        <p>你可以分享设计到社交网络，富媒体的设计分享，让创意的展现不再是二维的世界；也可以输出成格式文件，平台为你提供高清的png、pdf格式输出，无论是传输还是打印印刷都将轻松实现。</p>
+        <div class="dyj"><img src="images/4(2).png" width="133" height="133"></div>
+        <div class="sj"><img src="images/3(2).png"width="133" height="134"></div>
+        <div class="right_tu">
+            <div class="right_bottom"><img src="images/1(4).png" width="677" height="488"></div>
+            <div class="right_scree"><img src="images/2(3).png" width="387" height="301"></div>
+        </div>
+        <div class="left_tb"><img src="images/5(2).png" width="159" height="164"></div>
+    </div>
+    <div class="section section6">
+        <div class="left_top"><img src="images/2.png" width="70" height="70"></div>
+        <div class="left_bottom"><img src="images/1.png" width="70" height="70"></div>
+        <div class="right_top"><img src="images/4.png" width="70" height="70"></div>
+        <div class="right_bottom"><img src="images/3.png" width="70" height="70"></div>
+        <div class="start_q"><img src="images/5.png" width="260" height="260"></div>
+        <div class="start"><img src="images/6.png" width="194" height="52"></div>
+        <div class="zt"><img src="images/7.png" width="222" height="30"></div>
+    </div>
+</div>
+
+
+
+</body>
+
+
+<script src="lib/jquery-1.11.1.js"></script>
+<script src="lib/jquery.fullPage.js"></script>
+<script src="lib/jquery.minicolors.min.js"></script>
+<script>
+    window.location.hash="";
+    $("#dowebok").fullpage({
+        navigation: true,
+        menu:true,
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage','sixthPage'],
+        menu: '.myMenu',
+        // loopTop:true,
+        // loopBottom:true,
+        // autoScrolling:true,
+        animateAnchor:false,
+        recordHistory:false,
+        afterRender: function() {   //可以用来定义首屏加载动画
+            $(".section1 h1").animate({opacity: 1},1000);
+            $(".section1 p").delay(500).animate({opacity: 1},1000);
+            $(".section1 .dlzc").delay(1000).animate({ opacity: 1},1000);
+        },
+        afterLoad: function(anchorLink, index ){
+            if(index==1){
+                console.log(123);
+                $(".section1 .hk h1").animate({ opacity: 1},1000);
+                $(".section1 .hk p").delay(500).animate({ opacity: 1},1000);
+                $(".section1 .dlzc").delay(1000).animate({ opacity: 1},1000);
+            }
+            if(index==2){
+                $(".section2 .zk h1").animate({ left:90},1000);
+                $(".section2 .zk p").delay(100).animate({left:90},1000);
+                $(".section2 .dt").delay(500).animate({bottom:0,opacity: 1},1000);
+                $(".section2 .tb").addClass("animated rotateInDownRight").animate({opacity: 1},1000);
+            }
+            if(index==3){
+                $(".section3 .zk h3").animate({ top:90, opacity: 1},1000);
+                $(".section3 .zk h2").delay(100).animate({top:30, opacity: 1},1000);
+                $(".section3 .zk .middle").delay(300).animate({top:215,opacity: 1},1000);
+                $(".section3 .zk .left").delay(500).animate({ top:150, opacity: 1},1000);
+                $(".section3 .zk .right").delay(700).animate({top:200, opacity: 1},1000);
+                $(".section3 .zk .bottom").delay(1000).animate({bottom:18, opacity: 1},1000);
+            }
+            if(index==4){
+                $(".section4 .zk h3").delay(100).animate({ left:100, opacity: 1},1000);
+                $(".section4 .zk h2").animate({left:420, opacity: 1},1000);
+                $(".section4 .zk .bjb").animate({top:125,opacity: 1},1000);
+                $(".section4 .zk .dn").delay(100).animate({ top:40, opacity: 1},1000);
+                $(".section4 .zk .dn_scree").delay(100).animate({top:50, opacity: 1},1000);
+                $(".section4 .zk .right_top").delay(300).animate({top:3, opacity: 1},1000);
+                $(".section4 .zk .left_bottom").delay(500).animate({bottom:80, opacity: 1},1000);
+                $(".section4 .zk .coffee").delay(300).animate({ opacity: 1},1000);
+                $(".section4 .zk .glasses").delay(500).animate({bottom:25, opacity: 1},1000);
+            }
+            if(index==5){
+                $(".section5  h3").animate({ left:355, opacity: 1},1000);
+                $(".section5 p").delay(100).animate({left:355, opacity: 1},1000);
+                $(".section5 .dyj").delay(1000).animate({opacity: 1},1000);
+                $(".section5 .sj").delay(1000).animate({opacity: 1},1000);
+                $(".section5 .right_tu").animate({bottom:-40},1000);
+                $(".section5 .right_scree").delay(1000).animate({top:-120,right:80,},1000);
+                $(".section5 .left_tb").addClass("animated rotateInDownRight").animate({opacity:1},1000);
+            }
+            if(index==6){
+                $(".section6 .left_top").animate({ left:100,top:50, opacity: 1},1000);
+                $(".section6 .left_bottom").animate({left:100,bottom:50, opacity: 1},1000);
+                $(".section6 .right_top").animate({right:100,top:50,opacity: 1},1000);
+                $(".section6 .right_bottom").animate({right:100,bottom:50,opacity: 1},1000);
+                $(".section6 .start_q").delay(1000).animate({opacity: 1},1000);
+                $(".section6 .start").delay(1500).animate({opacity: 1},1000);
+                $(".section6 .zt").delay(1500).animate({opacity: 1},1000);
+            }
+        },
+        onLeave: function(index, nextIndex ,direction ) {
+            if(index==1){
+                $(".section1 .hk h1").animate({ opacity: 0},500);
+                $(".section1 .hk p").animate({ opacity: 0},500);
+                $(".section1 .dlzc").animate({ opacity: 0},500);
+
+            }
+            if(index==2){
+                $(".section2 .zk h1").animate({ left:"-100%"},80);
+                $(".section2 .zk p").animate({left:"-100%"},80);
+                $(".section2 .zk .dt").animate({bottom:"-100%",opacity: 0},80);
+                $(".section2 .zk .tb").removeClass("animated rotateInDownRight").animate({opacity: 0},80);
+            }
+            if(index==3){
+                $(".section3 .zk h3").animate({ top:"-100%", opacity: 0},80);
+                $(".section3 .zk h2").animate({top:"-100%", opacity: 0},80);
+                $(".section3 .zk .middle").animate({top:"1000%",opacity: 0},80);
+                $(".section3 .zk .left").animate({ top:"1000%", opacity: 0},80);
+                $(".section3 .zk .right").animate({top:"1000%", opacity: 0},80);
+                $(".section3 .zk .bottom").animate({bottom:"-100%", opacity: 0},80);
+            }
+            if(index==4){
+                $(".section4 .zk h3").animate({ left:"-100%", opacity: 0},80);
+                $(".section4 .zk h2").animate({left:"-100%", opacity: 0},80);
+                $(".section4 .zk .bjb").animate({top:"1000%",opacity: 0},80);
+                $(".section4 .zk .dn").animate({ top:"1000%", opacity:0},80);
+                $(".section4 .zk .dn_scree").animate({top:"1000%", opacity: 0},80);
+                $(".section4 .zk .right_top").animate({top:"1000%", opacity: 0},80);
+                $(".section4 .zk .left_bottom").animate({bottom:"-100%", opacity: 0},80);
+                $(".section4 .zk .coffee").animate({ opacity: 0},80);
+                $(".section4 .zk .glasses").animate({bottom:"-100%", opacity: 0},80);
+            }
+            if(index==5){
+                $(".section5  h3").animate({ left:"-100%", opacity: 0},80);
+                $(".section5 p").animate({left:"-100%", opacity: 0},80);
+                $(".section5 .dyj").animate({opacity: 0},80);
+                $(".section5 .sj").animate({opacity: 0},80);
+                $(".section5 .right_tu").animate({bottom:"-100%"},80);
+                $(".section5 .right_scree").animate({top:22,right:15,},80);
+                $(".section5 .left_tb").removeClass("animated rotateInDownRight").animate({opacity: 0},80);
+            }
+            if(index==6){
+                $(".section6 .left_top").animate({ left:0,top:0, opacity: 0},80);
+                $(".section6 .left_bottom").animate({left:0,bottom:0, opacity: 0},80);
+                $(".section6 .right_top").animate({right:0,top:0,opacity: 0},80);
+                $(".section6 .right_bottom").animate({right:0,bottom:0,opacity: 0},80);
+                $(".section6 .start_q").animate({opacity: 0},80);
+                $(".section6 .start").animate({opacity: 0},80);
+                $(".section6 .zt").animate({opacity: 0},80);
+            }
+        },
+        
+    });
+</script>
+</html>
